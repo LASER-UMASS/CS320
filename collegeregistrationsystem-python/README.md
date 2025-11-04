@@ -40,7 +40,7 @@ The college registration system test suite is contained in this file:
 It contains 15 test cases. You are responsible for implementing the 6 test cases marked with:
     `#TODO`
 
-Here's how to run all of the test cases in the test suite:
+## Run all of the test cases in your test suite
 
     `pytest --verbose tests/test_collegeregistrationsystem.py` on MacOS/Linux
 
@@ -49,3 +49,22 @@ Here's how to run all of the test cases in the test suite:
 Initially 6 test cases should fail (i.e. the TODOs) and 9 test cases should pass.
 
 Your final test suite needs to have all test cases passing.
+
+## Generate a code coverage report of the test suite
+
+1. Run the code coverage tool
+
+    `coverage run -m pytest --verbose tests/test_collegeregistrationsystem.py` on MacOS/Linux
+
+    `coverage run -m pytest --verbose tests\test_collegeregistrationsystem.py` on Windows (Powershell)
+
+2. Generate the code coverage tool's report
+
+   `coverage report`
+
+3. Convert this report to HTML
+
+   `coverage html`
+
+4. Open the report (found in htmlcov/index.html) in your web browser
+   
