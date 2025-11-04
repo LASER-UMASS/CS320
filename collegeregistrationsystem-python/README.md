@@ -7,6 +7,10 @@ This is an initial prototype of the backend for the college registration system 
 
 # Building:
 
+You need to have the following installed:
+- python 3 or higher
+- pip 22 or higher
+
 Here are the step-by-step instructions:
 
 1. Set the python path to be able to find the application and its test suite:
