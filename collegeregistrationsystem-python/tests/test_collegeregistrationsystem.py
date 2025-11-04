@@ -27,7 +27,7 @@ COURSE_1_NUMBEROFCREDITS_INVALID = -1
 COURSE_1_COURSESECTION_1_ENROLLMENTCAP_VALID = 3
 COURSE_1_COURSESECTION_1_ENROLLMENTCAP_INVALID = -1
 
-class CollegeRegistrationSystemFullTest(unittest.TestCase):
+class CollegeRegistrationSystemTest(unittest.TestCase):
     college_registration_system = None
 
     def setUp(self):
