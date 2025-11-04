@@ -1,31 +1,23 @@
-import datetime
 import unittest
 
-from src.degree import Degree
-from src.department import Department
-from src.student import Student
-from src.collegemembernotfoundexception import CollegeMemberNotFoundException
 from src.collegeregistrationsystem import CollegeRegistrationSystem
 from src.coursealreadyexistsexception import CourseAlreadyExistsException
 from src.coursenotfoundexception import CourseNotFoundException
-from src.coursesectionnotfoundexception import CourseSectionNotFoundException
-from src.coursesectionfullexception import CourseSectionFullException
-from src.facultyonleaveexception import FacultyOnLeaveException
 
-STUDENT_FIRST_ID = 1
-STUDENT_1_FIRSTNAME_VALID = "Jane"
-STUDENT_1_LASTNAME_VALID = "Doe"
-STUDENT_1_DATEOFBIRTH_VALID = datetime.date(2005, 1, 31)
-STUDENT_1_EMAILADDRESS_VALID = "jdoe@gmail.com"
-STUDENT_1_HOMEADDRESS_VALID = "1 Main Street, Smalltown, MA, 01234"
-STUDENT_1_HOMEADDRESS_INVALID = ""
-	
-COURSE_1_TITLE = str(Department.COMPUTER_SCIENCE.name) + " 429"
-COURSE_1_NUMBEROFCREDITS_VALID = 4
-COURSE_1_NUMBEROFCREDITS_INVALID = -1
-	
-COURSE_1_COURSESECTION_1_ENROLLMENTCAP_VALID = 3
-COURSE_1_COURSESECTION_1_ENROLLMENTCAP_INVALID = -1
+from tests.constants import STUDENT_FIRST_ID
+from tests.constants import STUDENT_1_FIRSTNAME_VALID
+from tests.constants import STUDENT_1_LASTNAME_VALID
+from tests.constants import STUDENT_1_DATEOFBIRTH_VALID
+from tests.constants import STUDENT_1_EMAILADDRESS_VALID
+from tests.constants import STUDENT_1_HOMEADDRESS_VALID
+from tests.constants import STUDENT_1_HOMEADDRESS_INVALID
+
+from tests.constants import COURSE_1_TITLE
+from tests.constants import COURSE_1_NUMBEROFCREDITS_VALID
+from tests.constants import COURSE_1_NUMBEROFCREDITS_INVALID
+
+from tests.constants import COURSE_1_COURSESECTION_1_ENROLLMENTCAP_VALID
+from tests.constants import COURSE_1_COURSESECTION_1_ENROLLMENTCAP_INVALID
 
 class CollegeRegistrationSystemTest(unittest.TestCase):
     college_registration_system = None
