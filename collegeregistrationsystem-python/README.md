@@ -8,15 +8,25 @@ This is an initial prototype of the backend for the college registration system 
 # Building:
 
 Here are the step-by-step instructions:
-1. Set the python path to be able to find the application and its test suite
+
+1. Set the python path to be able to find the application and its test suite:
+   
     `export PYTHONPATH=$PWD` on MacOS/Linux
+   
     `$env:PYTHONPATH="$PWD"` on Windows (Powershell)
+   
 2. Create a new testing virtual environment:
+   
     `python -m venv env_testing`
+
 3. Activate the testing virtual environment:
+
     `source env_testing/bin/activate` on MacOS/Linux
+   
     `env_testing\Scripts\Activate` on Windows (Powershell)
+   
 4. Install the testing build dependencies:
+   
     `pip install -r requirements.txt`
 
 # Testing:
@@ -27,7 +37,9 @@ It contains 15 test cases. You are responsible for implementing the 6 test cases
     `#TODO`
 
 Here's how to run all of the test cases in the test suite:
+
     `pytest --verbose tests/test_collegeregistrationsystem.py` on MacOS/Linux
+
     `pytest --verbose tests\test_collegeregistrationsystem.py` on Windows (Powershell)
 
 Initially 6 test cases should fail (i.e. the TODOs) and 9 test cases should pass.
