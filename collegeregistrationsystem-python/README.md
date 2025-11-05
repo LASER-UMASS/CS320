@@ -13,23 +13,25 @@ You need to have the following installed:
 
 Here are the step-by-step instructions:
 
-1. Set the python path to be able to find the application and its test suite:
+1. Change into the CS320/collegeregistrationsystem-python folder
+
+2. Set the python path to be able to find the application and its test suite:
    
     `export PYTHONPATH=$PWD` on MacOS/Linux
    
     `$env:PYTHONPATH="$PWD"` on Windows (Powershell)
    
-2. Create a new testing virtual environment:
+3. Create a new testing virtual environment:
    
     `python -m venv env_testing`
 
-3. Activate the testing virtual environment:
+4. Activate the testing virtual environment:
 
     `source env_testing/bin/activate` on MacOS/Linux
    
     `env_testing\Scripts\Activate` on Windows (Powershell)
    
-4. Install the testing build dependencies:
+5. Install the testing build dependencies:
    
     `pip install -r requirements.txt`
 
